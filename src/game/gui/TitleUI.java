@@ -3,7 +3,7 @@ package game.gui;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
-import game.core.InfinityGame;
+import game.gui.wizard.GameWizardWindow;
 
 import javax.swing.*;
 import java.awt.*;

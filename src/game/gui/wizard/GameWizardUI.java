@@ -1,8 +1,9 @@
-package game.gui;
+package game.gui.wizard;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import game.core.InfinityGame;
+import game.gui.TitleWindow;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,21 +23,21 @@ public class GameWizardUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 currentWindow.dispose();
-                InfinityGame.gameWizard.newGameSetup();
+                new NewGameWindow();
             }
         });
         loadGameButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 currentWindow.dispose();
-                InfinityGame.gameWizard.loadGame();
+
             }
         });
         deleteGameButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 currentWindow.dispose();
-                InfinityGame.gameWizard.deleteGame();
+
             }
         });
         backButton.addActionListener(new ActionListener() {
