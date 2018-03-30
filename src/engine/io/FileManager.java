@@ -16,7 +16,7 @@ public class FileManager {
      * @param filename File name of the file
      * @return ArrayList of the lines
      */
-    public List<String> readFile(String filename) {
+    public static List<String> readFile(String filename) {
         List<String> input = new ArrayList<>();
 
         try {
@@ -45,7 +45,7 @@ public class FileManager {
      * @param filename Filename
      * @return if the file exists
      */
-    public boolean doesFileExist(String filename) {
+    public static boolean doesFileExist(String filename) {
         return new File(DATA_FOLDER_LOCATION + "/" + filename + DATA_FILE_EXT).exists();
     }
 
@@ -55,7 +55,7 @@ public class FileManager {
      * @param text text to write
      * @return if the writing was a success
      */
-    public boolean writeToFile(String filename, List<String> text, boolean overwrite) {
+    public static boolean writeToFile(String filename, List<String> text, boolean overwrite) {
         boolean success = false; // end result variable
 
         File file = new File(DATA_FOLDER_LOCATION + "/" + filename + DATA_FILE_EXT);
