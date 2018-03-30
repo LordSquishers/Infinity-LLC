@@ -36,7 +36,8 @@ public class TitleUI {
         playButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO- begin actual game stuff
+                currentWindow.dispose();
+                new GameWizardWindow();
             }
         });
     }
