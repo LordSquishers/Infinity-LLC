@@ -20,13 +20,16 @@ public class FileManager {
         List<String> input = new ArrayList<>();
 
         try {
+            //Initiating variables
             FileReader fileReader = new FileReader(new File(DATA_FOLDER_LOCATION + "/" + filename + DATA_FILE_EXT));
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
+            //File reading
             String currentLine;
             while((currentLine = bufferedReader.readLine()) != null) {
                 input.add(currentLine);
             }
+
             fileReader.close();
             bufferedReader.close();
 
@@ -47,31 +50,36 @@ public class FileManager {
     }
 
     /**
-     * Writes to a file
+     * Writes to a file. Be sure to use the return value to ensure proper code.
      * @param filename filename
      * @param text text to write
      * @return if the writing was a success
      */
     public boolean writeToFile(String filename, List<String> text, boolean overwrite) {
+        boolean success = false; // end result variable
+
         File file = new File(DATA_FOLDER_LOCATION + "/" + filename + DATA_FILE_EXT);
         File saveDirectory = new File(DATA_FOLDER_LOCATION);
 
-        boolean success = false;
         boolean fileExists = file.exists();
         List<String> existingData = new ArrayList<>();
 
+        //If this file exists, read the data already existing
         if(!overwrite && fileExists) existingData = readFile(filename);
 
         try {
+            //If there is no directory, make a directory
             if(!saveDirectory.exists()) saveDirectory.mkdirs();
 
             FileWriter fileWriter = new FileWriter(file);
             PrintWriter printWriter = new PrintWriter(fileWriter);
 
+            //If there was data in the file, write the old data back into the file
             if(!overwrite && fileExists) {
                 for(String line: existingData) printWriter.println(line);
             }
 
+            //Prints the new data to the file
             for(String line: text) printWriter.println(line);
 
             printWriter.close();
