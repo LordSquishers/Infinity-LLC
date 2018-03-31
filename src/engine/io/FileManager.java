@@ -4,6 +4,10 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A simple file API for easy file management.
+ * @author BrusselSprout
+ */
 public class FileManager {
 
     //TODO- comment this code
@@ -34,7 +38,7 @@ public class FileManager {
             bufferedReader.close();
 
         } catch (IOException e) {
-            System.err.println("[ERROR] Could not read file " + filename + ".ifn");
+            System.err.println("[ERROR] Could not read file " + filename + DATA_FILE_EXT);
         }
 
         return input;
@@ -85,10 +89,15 @@ public class FileManager {
             printWriter.close();
             success = true;
         } catch (IOException e) {
-            System.err.println("[ERROR] Could not write to file " + filename + ".ifn");
+            System.err.println("[ERROR] Could not write to file " + filename + DATA_FILE_EXT);
         }
 
         return success;
+    }
+
+    public static boolean deleteFile(String fileName) {
+        File file = new File(DATA_FOLDER_LOCATION + "/" + fileName + DATA_FILE_EXT);
+        return file.delete();
     }
 
 }

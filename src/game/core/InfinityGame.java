@@ -1,6 +1,6 @@
 package game.core;
 
-import game.gui.TitleWindow;
+import game.gui.menu.TitleWindow;
 import game.setup.GameWizard;
 
 public class InfinityGame {

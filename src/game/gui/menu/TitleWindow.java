@@ -1,4 +1,4 @@
-package game.gui;
+package game.gui.menu;
 
 import game.core.InfinityGame;
 

@@ -4,17 +4,17 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * Game Wizard screen window
+ * delete confirmation window
  */
-public class GameWizardWindow extends JFrame {
+public class DeleteConfirmationWindow extends JFrame {
 
     private static final String TITLE_TITLE = " ";
-    private static final Dimension WINDOW_SIZE = new Dimension(400,500);
+    private static final Dimension WINDOW_SIZE = new Dimension(300,200);
 
-    public GameWizardWindow() {
+    public DeleteConfirmationWindow(String gameName) {
         super(TITLE_TITLE);
 
-        JPanel mainPanel = new GameWizardUI(this).mainPanel;
+        JPanel mainPanel = new DeleteConfirmationUI(this, gameName).mainPanel;
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(WINDOW_SIZE);

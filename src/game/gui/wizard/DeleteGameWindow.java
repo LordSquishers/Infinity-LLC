@@ -1,22 +1,20 @@
-package game.gui;
-
-import game.core.InfinityGame;
+package game.gui.wizard;
 
 import javax.swing.*;
 import java.awt.*;
 
 /**
- * Title screen window
+ * Delete screen window
  */
-public class AboutWindow extends JFrame {
+public class DeleteGameWindow extends JFrame {
 
-    private static final String TITLE_TITLE = "About " + InfinityGame.GAME_TITLE;
+    private static final String TITLE_TITLE = "Delete Save";
     private static final Dimension WINDOW_SIZE = new Dimension(400,500);
 
-    public AboutWindow() {
+    public DeleteGameWindow() {
         super(TITLE_TITLE);
 
-        JPanel mainPanel = new AboutUI(this).mainPanel;
+        JPanel mainPanel = new DeleteGameWizardUI(this).mainPanel;
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(WINDOW_SIZE);

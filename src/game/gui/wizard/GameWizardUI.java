@@ -2,8 +2,7 @@ package game.gui.wizard;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
-import game.core.InfinityGame;
-import game.gui.TitleWindow;
+import game.gui.menu.TitleWindow;
 
 import javax.swing.*;
 import java.awt.*;
@@ -37,7 +36,7 @@ public class GameWizardUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 currentWindow.dispose();
-
+                new DeleteGameWindow();
             }
         });
         backButton.addActionListener(new ActionListener() {

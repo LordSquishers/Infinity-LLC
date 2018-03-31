@@ -1,20 +1,22 @@
-package game.gui.wizard;
+package game.gui.menu;
+
+import game.core.InfinityGame;
 
 import javax.swing.*;
 import java.awt.*;
 
 /**
- * Game Wizard screen window
+ * Title screen window
  */
-public class GameWizardWindow extends JFrame {
+public class AboutWindow extends JFrame {
 
-    private static final String TITLE_TITLE = " ";
+    private static final String TITLE_TITLE = "About " + InfinityGame.GAME_TITLE;
     private static final Dimension WINDOW_SIZE = new Dimension(400,500);
 
-    public GameWizardWindow() {
+    public AboutWindow() {
         super(TITLE_TITLE);
 
-        JPanel mainPanel = new GameWizardUI(this).mainPanel;
+        JPanel mainPanel = new AboutUI(this).mainPanel;
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(WINDOW_SIZE);
