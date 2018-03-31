@@ -8,6 +8,8 @@ import java.util.List;
 
 public class GameWizard {
 
+    //TODO- make the load save GUI able to provide a list of game saves (maybe implement game archive)
+
     public static String MAIN_SAVE_EXT = "_00";
 
     private List<GameSave> gameSaveList = new ArrayList<>();
@@ -17,9 +19,13 @@ public class GameWizard {
         GameSave newSave = new GameSave(gameName, companyName, playerName, playerArt, playerProgramming);
     }
 
-    public GameSave loadGame() {
+    public GameSave loadGame(String saveName) {
         //TODO- make code for loading a game
         return null;
+    }
+
+    public void startGame(GameSave gameSave) {
+
     }
 
     public void deleteGame(String gameName) {

@@ -18,6 +18,7 @@ public class GameWizardUI {
     private JLabel titleLabel;
 
     public GameWizardUI(GameWizardWindow currentWindow) {
+
         newGameButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -29,7 +30,7 @@ public class GameWizardUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 currentWindow.dispose();
-
+                new LoadGameWindow();
             }
         });
         deleteGameButton.addActionListener(new ActionListener() {

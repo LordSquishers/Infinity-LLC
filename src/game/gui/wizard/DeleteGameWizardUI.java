@@ -39,7 +39,7 @@ public class DeleteGameWizardUI {
 
                 boolean doesSaveExist = FileManager.doesFileExist(saveName + GameWizard.MAIN_SAVE_EXT);
 
-                if (doesSaveExist) {
+                if (doesSaveExist || deleteDebug) {
                     deleteGameButton.setEnabled(true);
                     gameFoundLabel.setForeground(Color.GREEN);
                     gameFoundLabel.setText("Game Found!");
