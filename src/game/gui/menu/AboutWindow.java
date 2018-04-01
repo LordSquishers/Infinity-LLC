@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * Title screen window
+ * About screen window
  */
 public class AboutWindow extends JFrame {
 

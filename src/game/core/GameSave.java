@@ -15,6 +15,11 @@ public class GameSave {
         setProperty("player_programming", String.valueOf(playerProgramming));
     }
 
+    public GameSave(String gameName, HashMap<String, String> gameProperties) {
+        this.gameName = gameName;
+        this.gameProperties = gameProperties;
+    }
+
     public HashMap<String, String> getGameProperties() {
         return gameProperties;
     }

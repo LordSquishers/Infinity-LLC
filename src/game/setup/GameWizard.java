@@ -1,6 +1,8 @@
 package game.setup;
 
+import engine.data.DataManager;
 import engine.io.FileManager;
+import game.core.GameLoop;
 import game.core.GameSave;
 
 import java.util.ArrayList;
@@ -30,10 +32,12 @@ public class GameWizard {
         GameSave newSave = new GameSave(gameName, companyName, playerName, playerArt, playerProgramming);
 
         //Saves the save to a file
+        DataManager.saveGameToFile(newSave);
+        List<String> gameListData = getGameList();
+        gameListData.add(gameName);
+        FileManager.writeToFile(GAME_LIST_PATH, gameListData, true);
 
-        //Starts the game
-
-        return null;
+        return newSave;
     }
 
     /**
@@ -42,8 +46,7 @@ public class GameWizard {
      * @return GameSave used to start the game.
      */
     public GameSave loadGame(String saveName) {
-        //TODO- make code for loading a game
-        return null;
+        return DataManager.loadGameFromFile(saveName);
     }
 
     /**
@@ -52,6 +55,7 @@ public class GameWizard {
      */
     public void startGame(GameSave gameSave) {
         //TODO- start the game
+        GameLoop mainGameLoop = new GameLoop(gameSave);
     }
 
     /**
