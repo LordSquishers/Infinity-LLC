@@ -1,5 +1,6 @@
 package game.gui.wizard;
 
+
 import javax.swing.*;
 import java.awt.*;
 

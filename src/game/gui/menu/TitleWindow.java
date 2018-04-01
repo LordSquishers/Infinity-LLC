@@ -1,5 +1,6 @@
 package game.gui.menu;
 
+import com.sun.tools.javac.comp.Check;
 import game.core.InfinityGame;
 
 import javax.swing.*;

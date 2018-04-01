@@ -10,9 +10,8 @@ import java.util.List;
  */
 public class FileManager {
 
-    //TODO- comment this code
-
-    public static final String DATA_FOLDER_LOCATION = "infinity-data";
+    //this code will only deal with the save data and not resources.
+    public static final String DATA_FOLDER_LOCATION = "infinity-data/saves";
     public static final String DATA_FILE_EXT = ".ifn";
 
     /**
@@ -95,9 +94,37 @@ public class FileManager {
         return success;
     }
 
+    /**
+     * Deletes a given file.
+     * @param fileName file to delete
+     * @return whether or not the deletion was a success.
+     */
     public static boolean deleteFile(String fileName) {
+        //Using File to delete the file.
         File file = new File(DATA_FOLDER_LOCATION + "/" + fileName + DATA_FILE_EXT);
         return file.delete();
+    }
+
+    /**
+     * Lists all files contained in a directory (includes sub-directories)
+     * @author StackOverflow
+     * @param folderPath the path of the folder
+     * @return a list of file names. (with extensions)
+     */
+    public static List<String> listFilesForFolder(String folderPath) {
+        List<String> files = new ArrayList<>();
+        File folder = new File(folderPath);
+
+        //Iterates through all files
+        for (File fileEntry : folder.listFiles()) {
+            if (fileEntry.isDirectory()) {
+                listFilesForFolder(fileEntry.getPath());
+            } else {
+                files.add(fileEntry.getName());
+            }
+        }
+
+        return files;
     }
 
 }

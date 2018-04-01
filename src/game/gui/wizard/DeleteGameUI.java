@@ -12,30 +12,30 @@ import javax.swing.event.DocumentListener;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import java.awt.*;
-import java.util.List;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
 
-public class LoadGameUI {
+public class DeleteGameUI {
     public JPanel mainPanel;
-    private JLabel loadGameLabel;
-    private JTextField loadGameField;
+    private JLabel deleteGameLabel;
+    private JTextField deleteGameField;
     private JLabel gameFoundLabel;
-    private JButton loadGameButton;
+    private JButton deleteGameButton;
     private JButton backButton;
     private JList gameList;
 
     private boolean fileFound = false;
 
-    public LoadGameUI(LoadGameWindow currentWindow) {
+    public DeleteGameUI(DeleteGameWindow currentWindow) {
         InfinityGame.gameWizard.refreshGameList();
 
         $$$setupUI$$$();
-        loadGameButton.setEnabled(false);
+        deleteGameButton.setEnabled(false);
         gameFoundLabel.setForeground(Color.RED);
         gameFoundLabel.setText("Game Not Found.");
 
-        loadGameField.getDocument().addDocumentListener(new DocumentListener() {
+        deleteGameField.getDocument().addDocumentListener(new DocumentListener() {
             public void changedUpdate(DocumentEvent e) {
                 labelChanged();
             }
@@ -49,28 +49,30 @@ public class LoadGameUI {
             }
 
             public void labelChanged() {
-                String saveName = loadGameField.getText();
+                String saveName = deleteGameField.getText();
                 gameList.clearSelection();
 
                 fileFound = FileManager.doesFileExist(saveName + GameWizard.MAIN_SAVE_EXT);
 
                 if (fileFound) {
-                    loadGameButton.setEnabled(true);
+                    deleteGameButton.setEnabled(true);
                     gameFoundLabel.setForeground(Color.GREEN);
                     gameFoundLabel.setText("Game Found!");
                 } else {
-                    loadGameButton.setEnabled(false);
+                    deleteGameButton.setEnabled(false);
                     gameFoundLabel.setForeground(Color.RED);
                     gameFoundLabel.setText("Game Not Found.");
                 }
             }
         });
-        loadGameButton.addActionListener(new ActionListener() {
+        deleteGameButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if (fileFound) {
                     currentWindow.dispose();
-                    InfinityGame.gameWizard.startGame(InfinityGame.gameWizard.loadGame(loadGameField.getText()));
+                    String gamename = deleteGameField.getText();
+                    InfinityGame.gameWizard.deleteGame(gamename);
+                    new DeleteConfirmationWindow(deleteGameField.getText());
                 }
             }
         });
@@ -86,13 +88,11 @@ public class LoadGameUI {
             public void valueChanged(ListSelectionEvent e) {
                 if (gameList.getSelectedIndex() != -1) {
                     fileFound = true;
-                    loadGameButton.setEnabled(true);
+                    deleteGameButton.setEnabled(true);
                     gameFoundLabel.setForeground(Color.GREEN);
                     gameFoundLabel.setText("Game Found!");
-                } else {
-                    loadGameButton.setEnabled(false);
-                    gameFoundLabel.setForeground(Color.RED);
-                    gameFoundLabel.setText("Game Not Found.");
+
+                    deleteGameField.setText((String) gameList.getSelectedValue());
                 }
             }
         });
@@ -125,17 +125,17 @@ public class LoadGameUI {
         createUIComponents();
         mainPanel = new JPanel();
         mainPanel.setLayout(new GridLayoutManager(4, 2, new Insets(0, 0, 0, 0), -1, -1));
-        loadGameLabel = new JLabel();
-        loadGameLabel.setText("Game Name:");
-        mainPanel.add(loadGameLabel, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        loadGameField = new JTextField();
-        mainPanel.add(loadGameField, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
+        deleteGameLabel = new JLabel();
+        deleteGameLabel.setText("Game Name:");
+        mainPanel.add(deleteGameLabel, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        deleteGameField = new JTextField();
+        mainPanel.add(deleteGameField, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
         gameFoundLabel = new JLabel();
         gameFoundLabel.setText("Game not found.");
         mainPanel.add(gameFoundLabel, new GridConstraints(2, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        loadGameButton = new JButton();
-        loadGameButton.setText("Load Game");
-        mainPanel.add(loadGameButton, new GridConstraints(3, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        deleteGameButton = new JButton();
+        deleteGameButton.setText("Delete Game");
+        mainPanel.add(deleteGameButton, new GridConstraints(3, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         backButton = new JButton();
         backButton.setText("Back");
         mainPanel.add(backButton, new GridConstraints(3, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));

@@ -2,24 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51ae53d4-2e09-45fd-996b-96650bc361e4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/gui/wizard/LoadGameUI.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/gui/wizard/LoadGameUI.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/gui/wizard/LoadGameWindow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/infinity-data/saves/game_list.ifn" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameUI.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/infinity-data/TEST_FILE.ifn" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWizardUI.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWizardUI.form" afterPath="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameUI.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/engine/io/FileManager.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/engine/io/FileManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI$1.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI$2.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI$3.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI$4.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWizardUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/GameWizardUI$1.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/GameWizardUI$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/GameWizardUI$2.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/GameWizardUI$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/GameWizardUI$3.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/GameWizardUI$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/GameWizardUI$4.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/GameWizardUI$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/GameWizardUI.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/GameWizardUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/core/InfinityGame.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/core/InfinityGame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/menu/TitleWindow.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/menu/TitleWindow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteConfirmationWindow.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteConfirmationWindow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWindow.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/DeleteGameWindow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/GameWizardWindow.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/GameWizardWindow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/LoadGameUI$1.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/LoadGameUI$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/LoadGameUI$2.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/LoadGameUI$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/LoadGameUI$3.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/LoadGameUI$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/LoadGameUI.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/LoadGameUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/LoadGameWindow.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/LoadGameWindow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/NewGameUI$4.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/NewGameUI$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/NewGameUI.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/NewGameUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/NewGameWindow.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/wizard/NewGameWindow.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/setup/GameWizard.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/setup/GameWizard.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWizardUI.java" afterPath="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWizardUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/wizard/GameWizardUI.java" afterPath="$PROJECT_DIR$/src/game/gui/wizard/GameWizardUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/engine/io/FileManager.java" afterPath="$PROJECT_DIR$/src/engine/io/FileManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/core/InfinityGame.java" afterPath="$PROJECT_DIR$/src/game/core/InfinityGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/menu/TitleWindow.java" afterPath="$PROJECT_DIR$/src/game/gui/menu/TitleWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/wizard/DeleteConfirmationWindow.java" afterPath="$PROJECT_DIR$/src/game/gui/wizard/DeleteConfirmationWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWindow.java" afterPath="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/wizard/GameWizardWindow.java" afterPath="$PROJECT_DIR$/src/game/gui/wizard/GameWizardWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/wizard/LoadGameUI.form" afterPath="$PROJECT_DIR$/src/game/gui/wizard/LoadGameUI.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/wizard/LoadGameUI.java" afterPath="$PROJECT_DIR$/src/game/gui/wizard/LoadGameUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/wizard/LoadGameWindow.java" afterPath="$PROJECT_DIR$/src/game/gui/wizard/LoadGameWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/wizard/NewGameUI.java" afterPath="$PROJECT_DIR$/src/game/gui/wizard/NewGameUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/wizard/NewGameWindow.java" afterPath="$PROJECT_DIR$/src/game/gui/wizard/NewGameWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/setup/GameWizard.java" afterPath="$PROJECT_DIR$/src/game/setup/GameWizard.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -38,8 +58,8 @@
       <file leaf-file-name="InfinityGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/core/InfinityGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="225">
+              <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,10 +70,12 @@
       <file leaf-file-name="GameWizard.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/setup/GameWizard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="405">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#refreshGameList#0;class#GameWizard#0" expanded="false" />
+                <element signature="method#deleteGame#0;class#GameWizard#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -81,7 +103,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/game/gui/TitleUI.form" />
         <option value="$PROJECT_DIR$/src/engine/gui/WindowBase.java" />
-        <option value="$PROJECT_DIR$/src/engine/window/WindowBase.java" />
         <option value="$PROJECT_DIR$/src/game/gui/AboutWindow.java" />
         <option value="$PROJECT_DIR$/src/game/gui/TitleWindow.java" />
         <option value="$PROJECT_DIR$/src/game/gui/AboutUI.java" />
@@ -92,29 +113,34 @@
         <option value="$PROJECT_DIR$/src/game/core/GameSave.java" />
         <option value="$PROJECT_DIR$/src/game/gui/GameWizardUI.java" />
         <option value="$PROJECT_DIR$/src/game/gui/NewGameUI.form" />
-        <option value="$PROJECT_DIR$/src/game/gui/wizard/NewGameWindow.java" />
         <option value="$PROJECT_DIR$/src/game/gui/wizard/NewGameUI.form" />
-        <option value="$PROJECT_DIR$/src/game/gui/wizard/NewGameUI.java" />
-        <option value="$PROJECT_DIR$/src/game/core/InfinityGame.java" />
-        <option value="$PROJECT_DIR$/src/game/gui/menu/TitleWindow.java" />
-        <option value="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWindow.java" />
         <option value="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWizardUI.form" />
-        <option value="$PROJECT_DIR$/src/game/gui/wizard/GameWizardWindow.java" />
         <option value="$PROJECT_DIR$/src/game/gui/wizard/DeleteConfimationWindow.java" />
-        <option value="$PROJECT_DIR$/src/game/gui/wizard/DeleteConfirmationWindow.java" />
         <option value="$PROJECT_DIR$/src/game/gui/wizard/DeleteConfirmationUI.form" />
         <option value="$PROJECT_DIR$/src/game/gui/wizard/DeleteConfirmationUI.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/wizard/GameWizardUI.java" />
+        <option value="$PROJECT_DIR$/src/engine/window/WindowBase.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/menu/AboutWindow.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/wizard/DeleteConfirmationWindow.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/wizard/GameWizardWindow.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/wizard/LoadGameWindow.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/wizard/NewGameWindow.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/menu/TitleWindow.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/wizard/LoadGameUI.form" />
+        <option value="$PROJECT_DIR$/src/game/gui/wizard/LoadGameUI.java" />
         <option value="$PROJECT_DIR$/src/engine/io/FileManager.java" />
         <option value="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWizardUI.java" />
-        <option value="$PROJECT_DIR$/src/game/gui/wizard/LoadGameWindow.java" />
-        <option value="$PROJECT_DIR$/src/game/gui/wizard/GameWizardUI.java" />
-        <option value="$PROJECT_DIR$/src/game/gui/wizard/LoadGameUI.java" />
-        <option value="$PROJECT_DIR$/src/game/gui/wizard/LoadGameUI.form" />
+        <option value="$PROJECT_DIR$/src/game/core/InfinityGame.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/wizard/NewGameUI.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWindow.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameUI.form" />
+        <option value="$PROJECT_DIR$/infinity-data/saves/game_list.ifn" />
+        <option value="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameUI.java" />
         <option value="$PROJECT_DIR$/src/game/setup/GameWizard.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="19" />
     <option name="y" value="23" />
     <option name="width" value="1394" />
@@ -138,8 +164,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,6 +177,12 @@
               <item name="Infinity-LLC" type="b2602c69:ProjectViewProjectNode" />
               <item name="Infinity-LLC" type="462c0819:PsiDirectoryNode" />
               <item name="infinity-data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Infinity-LLC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Infinity-LLC" type="462c0819:PsiDirectoryNode" />
+              <item name="infinity-data" type="462c0819:PsiDirectoryNode" />
+              <item name="saves" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Infinity-LLC" type="b2602c69:ProjectViewProjectNode" />
@@ -188,14 +220,39 @@
               <item name="Infinity-LLC" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Infinity-LLC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Infinity-LLC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="wizard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Infinity-LLC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Infinity-LLC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="wizard" type="462c0819:PsiDirectoryNode" />
+              <item name="DeleteGameUI" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="Infinity-LLC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Infinity-LLC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="setup" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -206,7 +263,16 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="291" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/game/gui/wizard" />
+      <recent name="$PROJECT_DIR$/infinity-data/saves" />
+      <recent name="$PROJECT_DIR$/src/infinitydata/res" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="game.gui.wizard" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/infinity-data" />
       <recent name="$PROJECT_DIR$/src/game/gui/menu" />
       <recent name="$PROJECT_DIR$/src/game/gui/wizard" />
     </key>
@@ -223,12 +289,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Infinity LLC">
+  <component name="RunManager" selected="Application.Infinity Mac">
     <configuration name="Infinity LLC" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="game.core.InfinityGame" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Infinity-LLC" />
+      <envs />
+    </configuration>
+    <configuration name="Infinity Mac" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="game.core.InfinityGame" />
+      <option name="VM_PARAMETERS" value="-Dapple.laf.useScreenMenuBar=true -Xdock:name=&quot;Infinity LLC&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -299,6 +379,10 @@
       <properties />
       <listeners />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Infinity LLC" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Infinity Mac" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -317,7 +401,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <frame x="19" y="23" width="1394" height="873" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -332,7 +416,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18611111" sideWeight="0.493007" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18579628" sideWeight="0.493007" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -344,7 +429,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -355,6 +439,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/game/core/InfinityGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/setup/GameWizard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/core/InfinityGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -450,7 +554,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engine/gui/WindowBase.java" />
-    <entry file="file://$PROJECT_DIR$/src/engine/window/WindowBase.java" />
     <entry file="file://$PROJECT_DIR$/src/game/gui/menu/AboutUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
@@ -480,33 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/NewGameWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="55" lean-forward="false" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/gui/menu/TitleWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/gui/menu/AboutWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWizardUI.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -515,36 +591,6 @@
     <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/DeleteConfirmationUI.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/DeleteConfirmationUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/DeleteConfirmationWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/GameWizardWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/core/GameSave.java">
@@ -565,30 +611,28 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/NewGameUI.java">
+    <entry file="file://$PROJECT_DIR$/src/engine/window/WindowBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="41" column="47" lean-forward="true" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+        <state relative-caret-position="105">
+          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/menu/AboutWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/GameWizardWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/core/InfinityGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -597,21 +641,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/LoadGameWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWizardUI.java">
+    <entry file="file://$PROJECT_DIR$/src/game/gui/menu/TitleWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="41" column="40" lean-forward="false" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#DeleteGameWizardUI#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -621,45 +664,159 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/io/FileManager.java">
+    <entry file="file://$PROJECT_DIR$/infinity-data/saves/TEST-Two.ifn">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infinity-data/saves/Bob's Burgers.ifn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infinity-data/saves/hidden-save.ifn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWizardUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="31" column="50" lean-forward="true" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/core/InfinityGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/NewGameWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/LoadGameUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="54" column="53" lean-forward="true" selection-start-line="54" selection-start-column="53" selection-end-line="54" selection-end-column="53" />
+        <state relative-caret-position="-267">
+          <caret line="30" column="50" lean-forward="false" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#LoadGameUI#0" expanded="true" />
-            <element signature="initializer##0;class#LoadGameUI#0" expanded="true" />
-            <element signature="e#4781#4782#0" expanded="true" />
-            <element signature="e#4813#4814#0" expanded="true" />
+            <element signature="method#$$$setupUI$$$#0;class#LoadGameUI#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/NewGameUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="57" column="229" lean-forward="false" selection-start-line="57" selection-start-column="229" selection-end-line="57" selection-end-column="229" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/engine/io/FileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="101" column="26" lean-forward="false" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/GameWizardUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
+        <state relative-caret-position="261">
           <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/DeleteGameUI.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/DeleteConfirmationUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/DeleteConfirmationWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#GameWizardUI#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infinity-data/saves/TEST_FILE_00.ifn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infinity-data/saves/game_list.ifn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/DeleteGameUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="97" column="11" lean-forward="false" selection-start-line="97" selection-start-column="11" selection-end-line="97" selection-end-column="11" />
+          <folding>
+            <element signature="class#1189:2215" expanded="false" />
+            <element signature="method#labelChanged#0;class#1189:2215" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/setup/GameWizard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="405">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#refreshGameList#0;class#GameWizard#0" expanded="false" />
+            <element signature="method#deleteGame#0;class#GameWizard#0" expanded="false" />
           </folding>
         </state>
       </provider>

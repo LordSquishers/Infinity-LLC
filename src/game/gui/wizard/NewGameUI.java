@@ -55,9 +55,28 @@ public class NewGameUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 currentWindow.dispose();
-                InfinityGame.gameWizard.newGameSetup(gameSaveField.getText(), companyNameField.getText(), playerNameField.getText(), artSkillSlider.getValue(), programmingSkillSlider.getValue());
+                InfinityGame.gameWizard.startGame(InfinityGame.gameWizard.newGameSetup(gameSaveField.getText(), companyNameField.getText(), playerNameField.getText(), artSkillSlider.getValue(), programmingSkillSlider.getValue()));
             }
         });
+    }
+
+    /**
+     * @noinspection ALL
+     */
+    private Font $$$getFont$$$(String fontName, int style, int size, Font currentFont) {
+        if (currentFont == null) return null;
+        String resultName;
+        if (fontName == null) {
+            resultName = currentFont.getName();
+        } else {
+            Font testFont = new Font(fontName, Font.PLAIN, 10);
+            if (testFont.canDisplay('a') && testFont.canDisplay('1')) {
+                resultName = fontName;
+            } else {
+                resultName = currentFont.getName();
+            }
+        }
+        return new Font(resultName, style >= 0 ? style : currentFont.getStyle(), size >= 0 ? size : currentFont.getSize());
     }
 
     {
@@ -139,25 +158,6 @@ public class NewGameUI {
         artSkillSlider.setValue(20);
         artSkillSlider.setValueIsAdjusting(false);
         mainPanel.add(artSkillSlider, new GridConstraints(4, 2, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-    }
-
-    /**
-     * @noinspection ALL
-     */
-    private Font $$$getFont$$$(String fontName, int style, int size, Font currentFont) {
-        if (currentFont == null) return null;
-        String resultName;
-        if (fontName == null) {
-            resultName = currentFont.getName();
-        } else {
-            Font testFont = new Font(fontName, Font.PLAIN, 10);
-            if (testFont.canDisplay('a') && testFont.canDisplay('1')) {
-                resultName = fontName;
-            } else {
-                resultName = currentFont.getName();
-            }
-        }
-        return new Font(resultName, style >= 0 ? style : currentFont.getStyle(), size >= 0 ? size : currentFont.getSize());
     }
 
     /**

@@ -1,10 +1,11 @@
 package game.gui.wizard;
 
+
 import javax.swing.*;
 import java.awt.*;
 
 /**
- * Delete screen window
+ * Load screen window
  */
 public class DeleteGameWindow extends JFrame {
 
@@ -14,7 +15,7 @@ public class DeleteGameWindow extends JFrame {
     public DeleteGameWindow() {
         super(TITLE_TITLE);
 
-        JPanel mainPanel = new DeleteGameWizardUI(this).mainPanel;
+        JPanel mainPanel = new DeleteGameUI(this).mainPanel;
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(WINDOW_SIZE);
