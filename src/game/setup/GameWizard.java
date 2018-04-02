@@ -58,6 +58,10 @@ public class GameWizard {
         GameLoop mainGameLoop = new GameLoop(gameSave);
     }
 
+    public void saveGame(GameSave save) {
+        DataManager.saveGameToFile(save);
+    }
+
     /**
      * Returns contents of the game list
      * @return the contents of the game list

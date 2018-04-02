@@ -20,14 +20,17 @@ public class MainGameUI {
 
     private final boolean[] BUTTON_CONFIG = {
             true, // PLAYER
-            false, // COMPANY
-            false, // EMPLOYEES
-            false, // GAMES
+            true, // COMPANY
+            true, // EMPLOYEES
+            true, // GAMES
             true // MENU
     };
 
+    //TODO- make things functional
+
     public MainGameUI(MainGameWindow currentWindow) {
-        mainConsole.setModel(GameLoop.mainConsoleLog);
+        updateChat();
+        //max chat length: 25 lines
 
         playerButton.setEnabled(BUTTON_CONFIG[0]);
         companyButton.setEnabled(BUTTON_CONFIG[1]);
@@ -35,37 +38,35 @@ public class MainGameUI {
         gamesButton.setEnabled(BUTTON_CONFIG[3]);
         menuButton.setEnabled(BUTTON_CONFIG[4]);
 
-        //TODO- make buttons functional
-        //TODO- make chat work
-
         playerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                GameLoop.addChatMessage("Player button clicked!");
             }
         });
         companyButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                GameLoop.addChatMessage("Company button clicked!");
             }
         });
         employeesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                GameLoop.addChatMessage("Employees button clicked!");
             }
         });
         gamesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                GameLoop.addChatMessage("Games button clicked!");
             }
         });
         menuButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                currentWindow.dispose();
+                new MenuWindow();
             }
         });
     }

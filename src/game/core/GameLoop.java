@@ -15,4 +15,12 @@ public class GameLoop {
         new MainGameWindow();
     }
 
+    public static void addChatMessage(String message) {
+        mainConsoleLog.addElement(message);
+
+        if(mainConsoleLog.getSize() > 25) {
+            mainConsoleLog.removeElementAt(0);
+        }
+    }
+
 }

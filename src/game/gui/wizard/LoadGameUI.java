@@ -89,10 +89,8 @@ public class LoadGameUI {
                     loadGameButton.setEnabled(true);
                     gameFoundLabel.setForeground(Color.GREEN);
                     gameFoundLabel.setText("Game Found!");
-                } else {
-                    loadGameButton.setEnabled(false);
-                    gameFoundLabel.setForeground(Color.RED);
-                    gameFoundLabel.setText("Game Not Found.");
+
+                    loadGameField.setText((String) gameList.getSelectedValue());
                 }
             }
         });
