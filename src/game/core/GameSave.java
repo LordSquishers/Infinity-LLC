@@ -4,6 +4,9 @@ import java.util.HashMap;
 
 public class GameSave {
 
+    public static final float STARTING_AMT = 3000f;
+    public static final float UPGRADE_CONVERSION = 3;
+
     private String gameName;
     private HashMap<String, String> gameProperties = new HashMap<>();
 
@@ -13,6 +16,8 @@ public class GameSave {
         setProperty("player_name", playerName);
         setProperty("player_art", String.valueOf(playerArt));
         setProperty("player_programming", String.valueOf(playerProgramming));
+        setProperty("company_money", String.valueOf(STARTING_AMT));
+        setProperty("player_upgrade", String.valueOf(0));
     }
 
     public GameSave(String gameName, HashMap<String, String> gameProperties) {

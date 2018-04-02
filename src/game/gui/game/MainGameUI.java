@@ -26,6 +26,7 @@ public class MainGameUI {
             true // MENU
     };
 
+    //TODO- player done, decide on upgrade system
     //TODO- make things functional
 
     public MainGameUI(MainGameWindow currentWindow) {
@@ -41,7 +42,8 @@ public class MainGameUI {
         playerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                GameLoop.addChatMessage("Player button clicked!");
+                currentWindow.dispose();
+                new PlayerWindow();
             }
         });
         companyButton.addActionListener(new ActionListener() {

@@ -23,6 +23,7 @@ public class TitleWindow extends JFrame {
         setSize(WINDOW_SIZE);
         setVisible(true);
         setLocationRelativeTo(null);
+        requestFocus();
     }
 
 }

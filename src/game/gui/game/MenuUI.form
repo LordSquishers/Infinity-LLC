@@ -24,12 +24,12 @@
           <text value="Save Game"/>
         </properties>
       </component>
-      <component id="32735" class="javax.swing.JButton" binding="saveAndReturnToButton" default-binding="true">
+      <component id="32735" class="javax.swing.JButton" binding="saveAndExitToButton">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Save and Return to Menu"/>
+          <text value="Save and Exit to Menu"/>
         </properties>
       </component>
       <component id="632dd" class="javax.swing.JButton" binding="saveAndQuitButton" default-binding="true">

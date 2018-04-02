@@ -15,7 +15,7 @@ public class MenuUI {
     public JPanel mainPanel;
     private JButton resumeButton;
     private JButton saveGameButton;
-    private JButton saveAndReturnToButton;
+    private JButton saveAndExitToButton;
     private JButton saveAndQuitButton;
 
     public MenuUI(MenuWindow currentWindow) {
@@ -32,7 +32,7 @@ public class MenuUI {
                 InfinityGame.gameWizard.saveGame(GameLoop.gameSave);
             }
         });
-        saveAndReturnToButton.addActionListener(new ActionListener() {
+        saveAndExitToButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 InfinityGame.gameWizard.saveGame(GameLoop.gameSave);
@@ -73,9 +73,9 @@ public class MenuUI {
         saveGameButton = new JButton();
         saveGameButton.setText("Save Game");
         mainPanel.add(saveGameButton, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        saveAndReturnToButton = new JButton();
-        saveAndReturnToButton.setText("Save and Return to Menu");
-        mainPanel.add(saveAndReturnToButton, new GridConstraints(2, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        saveAndExitToButton = new JButton();
+        saveAndExitToButton.setText("Save and Exit to Menu");
+        mainPanel.add(saveAndExitToButton, new GridConstraints(2, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         saveAndQuitButton = new JButton();
         saveAndQuitButton.setText("Save and Quit");
         mainPanel.add(saveAndQuitButton, new GridConstraints(3, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
