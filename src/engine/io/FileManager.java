@@ -44,6 +44,35 @@ public class FileManager {
     }
 
     /**
+     * Reads the given file and gives you the data
+     * @param filepath File name of the file
+     * @return ArrayList of the lines
+     */
+    public static List<String> readSpecialFile(String filepath) {
+        List<String> input = new ArrayList<>();
+
+        try {
+            //Initiating variables
+            FileReader fileReader = new FileReader(new File(filepath));
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+            //File reading
+            String currentLine;
+            while((currentLine = bufferedReader.readLine()) != null) {
+                input.add(currentLine);
+            }
+
+            fileReader.close();
+            bufferedReader.close();
+
+        } catch (IOException e) {
+            System.err.println("[ERROR] Could not read file " + filepath);
+        }
+
+        return input;
+    }
+
+    /**
      * Simple way to check if the file exists
      * @param filename Filename
      * @return if the file exists

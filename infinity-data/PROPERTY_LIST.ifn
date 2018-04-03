@@ -1,0 +1,11 @@
+--player_name
+--player_art
+--player_programming
+--company_name
+
+player_upgrade=0
+
+company_money=3000
+company_office=0
+company_rep=0
+company_gain=0

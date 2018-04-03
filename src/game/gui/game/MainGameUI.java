@@ -21,12 +21,14 @@ public class MainGameUI {
     private final boolean[] BUTTON_CONFIG = {
             true, // PLAYER
             true, // COMPANY
-            true, // EMPLOYEES
-            true, // GAMES
+            false, // EMPLOYEES
+            false, // GAMES
             true // MENU
     };
 
     //TODO- player done, decide on upgrade system
+    //TODO- company base done, work on upgrading office
+    //TODO- start planning game system
     //TODO- make things functional
 
     public MainGameUI(MainGameWindow currentWindow) {
@@ -48,8 +50,9 @@ public class MainGameUI {
         });
         companyButton.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
-                GameLoop.addChatMessage("Company button clicked!");
+            public void actionPerformed(ActionEvent e)   {
+                currentWindow.dispose();
+                new CompanyWindow();
             }
         });
         employeesButton.addActionListener(new ActionListener() {
