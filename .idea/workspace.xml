@@ -10,10 +10,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51ae53d4-2e09-45fd-996b-96650bc361e4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/gui/game/GameUI.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/gui/game/GameUI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/game/gui/game/GameWindow.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/CompanyUI$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/CompanyUI$4.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Infinity_LLC_jar/Infinity-LLC.jar" afterPath="$PROJECT_DIR$/out/artifacts/Infinity_LLC_jar/Infinity-LLC.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/CompanyUI$1.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/CompanyUI$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/CompanyUI$2.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/CompanyUI$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/CompanyUI.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/CompanyUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/MainGameUI$1.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/MainGameUI$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/MainGameUI$2.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/MainGameUI$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/MainGameUI$3.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/MainGameUI$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/MainGameUI$4.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/MainGameUI$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/MainGameUI$5.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/MainGameUI$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/MainGameUI.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/MainGameUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/UpgradeOfficeUI.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/game/UpgradeOfficeUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/menu/AboutUI.class" afterPath="$PROJECT_DIR$/out/production/Infinity-LLC/game/gui/menu/AboutUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/game/UpgradeOfficeUI.java" afterPath="$PROJECT_DIR$/src/game/gui/game/UpgradeOfficeUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infinity-data/saves/PlayerBranch TEST_00.ifn" afterPath="$PROJECT_DIR$/infinity-data/saves/PlayerBranch TEST_00.ifn" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/game/CompanyUI.form" afterPath="$PROJECT_DIR$/src/game/gui/game/CompanyUI.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/game/CompanyUI.java" afterPath="$PROJECT_DIR$/src/game/gui/game/CompanyUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/game/MainGameUI.java" afterPath="$PROJECT_DIR$/src/game/gui/game/MainGameUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/menu/AboutUI.form" afterPath="$PROJECT_DIR$/src/game/gui/menu/AboutUI.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/gui/menu/AboutUI.java" afterPath="$PROJECT_DIR$/src/game/gui/menu/AboutUI.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,39 +75,34 @@
       <file leaf-file-name="MainGameUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/gui/game/MainGameUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="class#1323:1521" expanded="false" />
-                <element signature="class#1818:2009" expanded="false" />
-                <element signature="class#2054:2241" expanded="false" />
-                <element signature="class#2285:2481" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompanyUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/gui/game/CompanyUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="41" column="26" lean-forward="false" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="initializer##0;class#CompanyUI#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpgradeOfficeUI.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/game/gui/game/UpgradeOfficeUI.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="201">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="class#1363:1561" expanded="false" />
+                <element signature="class#1608:1809" expanded="false" />
+                <element signature="class#1858:2049" expanded="false" />
+                <element signature="class#2334:2530" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameUI.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/game/gui/game/GameUI.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameUI.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/game/gui/game/GameUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="45" column="44" lean-forward="true" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#$$$setupUI$$$#0;class#GameUI#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,8 +113,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Window" />
         <option value="Class" />
+        <option value="Window" />
       </list>
     </option>
   </component>
@@ -114,10 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/game/gui/TitleUI.java" />
-        <option value="$PROJECT_DIR$/src/game/gui/GameWizardUI.java" />
-        <option value="$PROJECT_DIR$/src/game/gui/NewGameUI.form" />
-        <option value="$PROJECT_DIR$/src/game/gui/wizard/NewGameUI.form" />
         <option value="$PROJECT_DIR$/src/game/gui/wizard/DeleteGameWizardUI.form" />
         <option value="$PROJECT_DIR$/src/game/gui/wizard/DeleteConfimationWindow.java" />
         <option value="$PROJECT_DIR$/src/game/gui/wizard/DeleteConfirmationUI.form" />
@@ -154,17 +165,21 @@
         <option value="$PROJECT_DIR$/src/game/core/Property.java" />
         <option value="$PROJECT_DIR$/src/game/core/Game.java" />
         <option value="$PROJECT_DIR$/src/game/core/GameLoop.java" />
-        <option value="$PROJECT_DIR$/src/game/gui/game/CompanyUI.form" />
         <option value="$PROJECT_DIR$/src/game/core/Reference.java" />
         <option value="$PROJECT_DIR$/src/engine/io/FileManager.java" />
         <option value="$PROJECT_DIR$/src/game/core/GameSave.java" />
         <option value="$PROJECT_DIR$/infinity-data/saves/joe_00.ifn" />
-        <option value="$PROJECT_DIR$/src/game/gui/game/MainGameUI.java" />
         <option value="$PROJECT_DIR$/src/game/gui/game/UpgradeOfficeUI.form" />
         <option value="$PROJECT_DIR$/infinity-data/saves/PlayerBranch TEST_00.ifn" />
         <option value="$PROJECT_DIR$/src/game/gui/game/UpgradeOfficeWindow.java" />
-        <option value="$PROJECT_DIR$/src/game/gui/game/CompanyUI.java" />
         <option value="$PROJECT_DIR$/src/game/gui/game/UpgradeOfficeUI.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/game/GameWindow.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/game/CompanyUI.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/menu/AboutUI.form" />
+        <option value="$PROJECT_DIR$/src/game/gui/game/MainGameUI.java" />
+        <option value="$PROJECT_DIR$/src/game/gui/game/CompanyUI.form" />
+        <option value="$PROJECT_DIR$/src/game/gui/game/GameUI.form" />
+        <option value="$PROJECT_DIR$/src/game/gui/game/GameUI.java" />
       </list>
     </option>
   </component>
@@ -271,7 +286,16 @@
               <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="gui" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-              <item name="UpgradeOfficeUI" type="e9f4de52:FormNode" />
+              <item name="CompanyUI" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="Infinity-LLC" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Infinity-LLC" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="gui" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="GameUI" type="e9f4de52:FormNode" />
             </path>
             <path>
               <item name="Infinity-LLC" type="b2602c69:ProjectViewProjectNode" />
@@ -484,24 +508,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/NewGameUI.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/engine/window/WindowBase.java" />
-    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/GameWizardWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/gui/wizard/LoadGameUI.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/infinity-data/saves/TEST-Two.ifn" />
     <entry file="file://$PROJECT_DIR$/infinity-data/saves/Bob's Burgers.ifn" />
     <entry file="file://$PROJECT_DIR$/infinity-data/saves/hidden-save.ifn" />
@@ -702,11 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/gui/game/CompanyUI.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/engine/io/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -761,20 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/gui/game/MainGameUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#1323:1521" expanded="false" />
-            <element signature="class#1818:2009" expanded="false" />
-            <element signature="class#2054:2241" expanded="false" />
-            <element signature="class#2285:2481" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/gui/game/UpgradeOfficeWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -799,17 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/gui/game/CompanyUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="41" column="26" lean-forward="false" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#CompanyUI#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/infinity-data/saves/PlayerBranch TEST_00.ifn">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -821,9 +797,68 @@
     <entry file="file://$PROJECT_DIR$/src/game/gui/game/UpgradeOfficeUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/game/GameWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/menu/AboutUI.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/game/CompanyUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#CompanyUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/game/CompanyUI.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/game/GameUI.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/game/MainGameUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#1363:1561" expanded="false" />
+            <element signature="class#1608:1809" expanded="false" />
+            <element signature="class#1858:2049" expanded="false" />
+            <element signature="class#2334:2530" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/gui/game/GameUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="45" column="44" lean-forward="true" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#$$$setupUI$$$#0;class#GameUI#0" expanded="true" />
           </folding>
         </state>
       </provider>

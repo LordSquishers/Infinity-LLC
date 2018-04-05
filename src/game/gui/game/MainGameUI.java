@@ -3,6 +3,7 @@ package game.gui.game;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import game.core.GameLoop;
+import game.gui.wizard.GameWizardWindow;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,7 +23,7 @@ public class MainGameUI {
             true, // PLAYER
             true, // COMPANY
             false, // EMPLOYEES
-            false, // GAMES
+            true, // GAMES
             true // MENU
     };
 
@@ -64,7 +65,8 @@ public class MainGameUI {
         gamesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                GameLoop.addChatMessage("Games button clicked!");
+                currentWindow.dispose();
+                new GameWindow();
             }
         });
         menuButton.addActionListener(new ActionListener() {

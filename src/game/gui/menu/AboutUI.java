@@ -44,6 +44,7 @@ public class AboutUI {
         mainPanel.setLayout(new GridLayoutManager(2, 1, new Insets(0, 0, 0, 0), -1, -1));
         mainPanel.setEnabled(true);
         infoPane = new JTextPane();
+        infoPane.setBackground(new Color(-1250068));
         infoPane.setEditable(false);
         infoPane.setEnabled(true);
         infoPane.setText("Infinity LLC is a game based almost entirely off of Software Tycoon LLC, a text-based game where you can make games. I wanted to make this game better and more intuitive. So here we are.");

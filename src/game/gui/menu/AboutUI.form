@@ -17,6 +17,7 @@
           </grid>
         </constraints>
         <properties>
+          <background color="-1250068"/>
           <editable value="false"/>
           <enabled value="true"/>
           <text value="Infinity LLC is a game based almost entirely off of Software Tycoon LLC, a text-based game where you can make games. I wanted to make this game better and more intuitive. So here we are."/>

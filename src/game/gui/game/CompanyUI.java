@@ -16,24 +16,14 @@ import game.core.*;
 
 public class CompanyUI {
     public JPanel mainPanel;
-    private JList gameList;
     private JButton backButton;
     private JButton upgradeOfficeButton;
     private JLabel companyLabel;
     private JLabel CEOLabel;
     private JLabel currentFundsLabel;
     private JLabel gamesReleasedLabel;
-    private JLabel gameOverviewLabel;
-    private JLabel totalGainLabel;
-    private JLabel profitLabel;
-    private JLabel ratingLabel;
-    private JButton detailsButton;
-
-    private DefaultListModel gameListModel;
 
     public CompanyUI(CompanyWindow currentWindow) {
-        CompanyUI cUI = this;
-        gameListModel = new DefaultListModel();
         initializeLabels();
 
         upgradeOfficeButton.addActionListener(new ActionListener() {
@@ -43,46 +33,11 @@ public class CompanyUI {
                 new UpgradeOfficeWindow();
             }
         });
-        detailsButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 currentWindow.dispose();
                 new MainGameWindow();
-            }
-        });
-        gameList.addListSelectionListener(new ListSelectionListener() {
-            @Override
-            public void valueChanged(ListSelectionEvent e) {
-                profitLabel.setForeground(Color.BLACK);
-                String gameName = (String) gameList.getSelectedValue();
-                Game selectedGame = null;
-
-                Iterator<Game> it = GameLoop.gameSave.getGames().iterator();
-                while (it.hasNext()) {
-                    Game game = it.next();
-                    if (game.getName().equalsIgnoreCase(gameName)) {
-                        selectedGame = game;
-                    }
-                }
-
-                gameOverviewLabel.setText(selectedGame.getName() + " - Overview");
-
-                float profit = selectedGame.getProfit();
-
-                if (profit > -1) {
-                    profitLabel.setText("Profit: £" + profit);
-                } else {
-                    profitLabel.setText("Profit: -£" + -profit);
-                    profitLabel.setForeground(Color.RED);
-                }
-                totalGainLabel.setText("Total Gain: £" + selectedGame.getGain());
-                ratingLabel.setText("Rating: " + (selectedGame.getRating() * 10) + " / 10");
             }
         });
     }
@@ -92,11 +47,6 @@ public class CompanyUI {
         CEOLabel.setText("CEO: " + GameLoop.gameSave.getProperty("player_name"));
         currentFundsLabel.setText("Current Funds: £" + GameLoop.gameSave.getProperty("company_money"));
         gamesReleasedLabel.setText("Games Released: " + String.valueOf(GameLoop.gameSave.getGames().size()));
-
-        gameList.setModel(gameListModel);
-        for (Game game : GameLoop.gameSave.getGames()) {
-            gameListModel.addElement(game.getName());
-        }
     }
 
     {
@@ -115,46 +65,25 @@ public class CompanyUI {
      */
     private void $$$setupUI$$$() {
         mainPanel = new JPanel();
-        mainPanel.setLayout(new GridLayoutManager(7, 3, new Insets(0, 0, 0, 0), -1, -1));
-        gameList = new JList();
-        gameList.setBackground(new Color(-1250068));
-        gameList.setSelectionBackground(new Color(-11626800));
-        mainPanel.add(gameList, new GridConstraints(0, 0, 6, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
-        final Spacer spacer1 = new Spacer();
-        mainPanel.add(spacer1, new GridConstraints(5, 2, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, 1, null, null, null, 0, false));
+        mainPanel.setLayout(new GridLayoutManager(7, 1, new Insets(0, 0, 0, 0), -1, -1));
+        upgradeOfficeButton = new JButton();
+        upgradeOfficeButton.setText("Upgrade Office");
+        mainPanel.add(upgradeOfficeButton, new GridConstraints(5, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        companyLabel = new JLabel();
+        companyLabel.setText("[COMPANY]");
+        mainPanel.add(companyLabel, new GridConstraints(0, 0, 2, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        CEOLabel = new JLabel();
+        CEOLabel.setText("CEO: [PLAYER]");
+        mainPanel.add(CEOLabel, new GridConstraints(2, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        currentFundsLabel = new JLabel();
+        currentFundsLabel.setText("Current Funds:");
+        mainPanel.add(currentFundsLabel, new GridConstraints(3, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        gamesReleasedLabel = new JLabel();
+        gamesReleasedLabel.setText("Games Released:");
+        mainPanel.add(gamesReleasedLabel, new GridConstraints(4, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         backButton = new JButton();
         backButton.setText("Back");
         mainPanel.add(backButton, new GridConstraints(6, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        upgradeOfficeButton = new JButton();
-        upgradeOfficeButton.setText("Upgrade Office");
-        mainPanel.add(upgradeOfficeButton, new GridConstraints(6, 2, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        companyLabel = new JLabel();
-        companyLabel.setText("[COMPANY]");
-        mainPanel.add(companyLabel, new GridConstraints(0, 2, 2, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        CEOLabel = new JLabel();
-        CEOLabel.setText("CEO: [PLAYER]");
-        mainPanel.add(CEOLabel, new GridConstraints(2, 2, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        currentFundsLabel = new JLabel();
-        currentFundsLabel.setText("Current Funds:");
-        mainPanel.add(currentFundsLabel, new GridConstraints(3, 2, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        gamesReleasedLabel = new JLabel();
-        gamesReleasedLabel.setText("Games Released:");
-        mainPanel.add(gamesReleasedLabel, new GridConstraints(4, 2, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        gameOverviewLabel = new JLabel();
-        gameOverviewLabel.setText("Select a Game:");
-        mainPanel.add(gameOverviewLabel, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        totalGainLabel = new JLabel();
-        totalGainLabel.setText("Total Gain:");
-        mainPanel.add(totalGainLabel, new GridConstraints(3, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        profitLabel = new JLabel();
-        profitLabel.setText("Profit:");
-        mainPanel.add(profitLabel, new GridConstraints(2, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        ratingLabel = new JLabel();
-        ratingLabel.setText("Rating:");
-        mainPanel.add(ratingLabel, new GridConstraints(4, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        detailsButton = new JButton();
-        detailsButton.setText("Details");
-        mainPanel.add(detailsButton, new GridConstraints(6, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
     }
 
     /**
