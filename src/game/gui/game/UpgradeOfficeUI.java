@@ -14,9 +14,9 @@ public class UpgradeOfficeUI {
 
     //OFFICE COST: 15000x^2 where x is the new office ID
 
-    private static final String NEXT_COST_TEXT = "Next Office Cost: ";
+    private static final String NEXT_COST_TEXT = "Next Office Cost: £";
     private static final String CURRENT_OFFICE_TEXT = "Current Office: ";
-    private static final String CURRENT_FUNDS_TEXT = "Current Funds: ";
+    private static final String CURRENT_FUNDS_TEXT = "Current Funds: £";
 
     public JPanel mainPanel;
     private JLabel companyLabel;
@@ -55,7 +55,7 @@ public class UpgradeOfficeUI {
 
     private void initializeLabels() {
 
-        if (Integer.parseInt(GameLoop.gameSave.getProperty("company_office")) < 7) {
+        if (Integer.parseInt(GameLoop.gameSave.getProperty("company_office")) < 6) {
             int nextOfficeCost = (int) (Math.pow(Integer.parseInt(GameLoop.gameSave.getProperty("company_office")) + 1, 2) * 15000);
             float currentFunds = Float.parseFloat(GameLoop.gameSave.getProperty("company_money"));
 
@@ -73,6 +73,11 @@ public class UpgradeOfficeUI {
                 nextCostLabel.setForeground(Color.BLACK);
             }
         } else {
+            float currentFunds = Float.parseFloat(GameLoop.gameSave.getProperty("company_money"));
+            companyLabel.setText(GameLoop.gameSave.getProperty("company_name"));
+            currentOfficeLabel.setText(CURRENT_OFFICE_TEXT + Reference.getOffice(Integer.parseInt(GameLoop.gameSave.getProperty("company_office"))));
+            currentFundsLabel.setText(CURRENT_FUNDS_TEXT + currentFunds);
+
             upgradeOfficeButton.setEnabled(false);
             upgradeOfficeButton.setText("No more offices!");
 
