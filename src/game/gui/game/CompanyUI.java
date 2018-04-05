@@ -32,13 +32,15 @@ public class CompanyUI {
     private DefaultListModel gameListModel;
 
     public CompanyUI(CompanyWindow currentWindow) {
+        CompanyUI cUI = this;
         gameListModel = new DefaultListModel();
         initializeLabels();
 
         upgradeOfficeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                currentWindow.dispose();
+                new UpgradeOfficeWindow();
             }
         });
         detailsButton.addActionListener(new ActionListener() {
@@ -85,7 +87,7 @@ public class CompanyUI {
         });
     }
 
-    private void initializeLabels() {
+    public void initializeLabels() {
         companyLabel.setText("[" + GameLoop.gameSave.getProperty("company_name") + "] - " + Reference.getOffice(Integer.parseInt(GameLoop.gameSave.getProperty("company_office"))));
         CEOLabel.setText("CEO: " + GameLoop.gameSave.getProperty("player_name"));
         currentFundsLabel.setText("Current Funds: £" + GameLoop.gameSave.getProperty("company_money"));

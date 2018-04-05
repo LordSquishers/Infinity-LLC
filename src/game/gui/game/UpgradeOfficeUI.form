@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="game.gui.game.UpgradeOfficeUI">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="290" height="425"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="437be" class="javax.swing.JLabel" binding="companyLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="[COMPANY] - OFFICE"/>
+        </properties>
+      </component>
+      <component id="21817" class="javax.swing.JLabel" binding="currentFundsLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Current Funds:"/>
+        </properties>
+      </component>
+      <component id="42026" class="javax.swing.JLabel" binding="currentOfficeLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Current Office"/>
+        </properties>
+      </component>
+      <component id="f32b6" class="javax.swing.JLabel" binding="nextCostLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Next Upgrade Cost:"/>
+        </properties>
+      </component>
+      <component id="dd7ad" class="javax.swing.JButton" binding="upgradeOfficeButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Upgrade Office"/>
+        </properties>
+      </component>
+      <component id="af4d0" class="javax.swing.JButton" binding="closeButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Close"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
