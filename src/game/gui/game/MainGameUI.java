@@ -28,7 +28,6 @@ public class MainGameUI {
     };
 
     //TODO- player done, decide on upgrade system
-    //TODO- company base done, work on upgrading office
     //TODO- start planning game system
     //TODO- make things functional
 

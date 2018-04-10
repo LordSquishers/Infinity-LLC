@@ -61,8 +61,7 @@ public class GameUI {
                 totalGainLabel.setText("Total Gain: £" + selectedGame.getGain());
                 ratingLabel.setText("Rating: " + (selectedGame.getRating() * 10) + " / 10");
 
-                //detailsButton.setEnabled(true);
-                //TODO- uncomment this when implemented
+                detailsButton.setEnabled(true);
             }
         });
         backButton.addActionListener(new ActionListener() {
@@ -75,8 +74,18 @@ public class GameUI {
         detailsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //currentWindow.dispose();
-                //new GameDetailWindow();
+                String gameName = (String) gameList.getSelectedValue();
+                Game selectedGame = null;
+
+                Iterator<Game> it = GameLoop.gameSave.getGames().iterator();
+                while (it.hasNext()) {
+                    Game game = it.next();
+                    if (game.getName().equalsIgnoreCase(gameName)) {
+                        selectedGame = game;
+                    }
+                }
+
+                new GameDetailWindow(selectedGame);
             }
         });
     }
