@@ -4,11 +4,14 @@ import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import game.core.Game;
 import game.core.GameLoop;
+import game.core.Platform;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
 
 public class GameDetailUI {
     public JPanel mainPanel;
@@ -64,7 +67,15 @@ public class GameDetailUI {
 
         ratingLabel.setText("Rating: " + (selectedGame.getRating() * 10) + " / 10");
 
-        //TODO- finish doing labels
+        platformLabel.setText("Platform - " + selectedGame.getPlatform());
+        genreLabel.setText("Genre - " + selectedGame.getGenre());
+        copiesSoldLabel.setText("Copies Sold - " + selectedGame.getCopiesSold());
+
+        if (selectedGame.isOnMarket()) {
+            marketStatusLabel.setText("On Market - Strength: " + selectedGame.getMarketMultiplier());
+        } else {
+            marketStatusLabel.setText("Off Market");
+        }
     }
 
     {

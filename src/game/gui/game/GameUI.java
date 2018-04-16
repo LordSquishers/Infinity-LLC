@@ -27,11 +27,11 @@ public class GameUI {
     private DefaultListModel<String> listModel;
 
     public GameUI(GameWindow currentWindow) {
-        detailsButton.setEnabled(false);
 
         listModel = new DefaultListModel<>();
         $$$setupUI$$$();
         initializeLabels();
+        detailsButton.setEnabled(false);
 
         gameList.addListSelectionListener(new ListSelectionListener() {
             @Override
@@ -85,6 +85,7 @@ public class GameUI {
                     }
                 }
 
+                currentWindow.dispose();
                 new GameDetailWindow(selectedGame);
             }
         });

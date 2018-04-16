@@ -12,8 +12,15 @@ public class GameLoop {
     public GameLoop(GameSave save) {
         this.gameSave = save;
         this.mainConsoleLog = new DefaultListModel();
-        gameSave.addGame(new Game("Testing LLC", gameSave.getProperty("company_name"), 0.85f, 1125, 230));
-        gameSave.addGame(new Game("Don't Buy This Game", gameSave.getProperty("company_name"), 0.25f, 200, 330));
+        Game test1 = new Game("Testing LLC", gameSave.getProperty("company_name"), 0.85f, 1125, 230, 30);
+        test1.setGenre(Genre.SANDBOX);
+        test1.setPlatform(Platform.SWEDE_PHONE_3);
+        Game test2 = new Game("Don't Buy This Game", gameSave.getProperty("company_name"), 0.25f, 200, 330, 50);
+        test2.setGenre(Genre.ACTION);
+        test2.setPlatform(Platform.BBOX);
+
+        gameSave.addGame(test1);
+        gameSave.addGame(test2);
         new MainGameWindow();
     }
 
