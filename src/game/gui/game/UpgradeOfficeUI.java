@@ -79,9 +79,9 @@ public class UpgradeOfficeUI {
             currentFundsLabel.setText(CURRENT_FUNDS_TEXT + currentFunds);
 
             upgradeOfficeButton.setEnabled(false);
-            upgradeOfficeButton.setText("No more offices!");
+            upgradeOfficeButton.setText("No new offices!");
 
-            nextCostLabel.setText(NEXT_COST_TEXT + "No new offices!");
+            nextCostLabel.setText("No new offices!");
         }
     }
 

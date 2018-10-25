@@ -28,7 +28,7 @@ public class MainGameUI {
     };
 
     //TODO- player done, decide on upgrade system
-    //TODO- start planning game system
+    //TODO- game creation, game saving, game money
     //TODO- make things functional
 
     public MainGameUI(MainGameWindow currentWindow) {
